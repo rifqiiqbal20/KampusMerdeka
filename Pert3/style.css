@@ -1,0 +1,30 @@
+body{
+          padding: 20px;
+}
+.login{
+          margin-right: 20px;
+}
+.box{
+          padding: 30px;
+          background-color: rgb(240, 240, 240);
+         margin-top: 10px;
+         text-align: center;
+         height: 250px;
+}
+
+.button{
+          margin-top: 50px;
+}
+.card{
+          padding: 15px;
+}
+.card-body a{
+margin-right: 100%;
+}
+footer {
+          text-align: left;
+          margin-top: 50px;
+          padding: 3px;
+          background-color: rgb(205, 205, 205);
+          color: rgb(1, 1, 1);
+        }
