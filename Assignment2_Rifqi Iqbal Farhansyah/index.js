@@ -51,6 +51,32 @@ buttonSubmit.addEventListener('click', (event) => {
   toggleBox()
 })
 
+btn =document.getElementById('submit');
+btn.addEventListener('click', function(){
+      let timerInterval
+      Swal.fire({
+      title: 'Terima kasih',
+      html: 'I will close in <b></b> milliseconds.',
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: () => {
+      Swal.showLoading()
+      const b = Swal.getHtmlContainer().querySelector('b')
+      timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+      }, 100)
+      },
+      willClose: () => {
+      clearInterval(timerInterval)
+      }
+      }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+      console.log('I was closed by the timer')
+      }
+      })
+})
+
 //android--------------------------------
 const myForm2 = document.getElementById('my-form2')
 const fname2 = document.getElementById('fname-text2')
