@@ -1,0 +1,266 @@
+@media(min-width:400px) {
+       
+                    .nav2 button,li {
+                              display: none;
+                    }
+                    .nav2 :hover {
+                              color: #f0f802;
+                    }
+                 
+               
+                    .experience,.form{
+                              display: block; 
+                    }
+                    .foto2 img{
+                              
+                            display: none;
+                    
+                    }
+                    
+                    .profil2 h2,#pp{
+                             display: none;
+                    }
+                 
+                 .button{
+                   display: none;
+                 }
+                 .experience2,.form2{
+                   display: none;
+          }
+          
+          body{
+                    background-color: #d8d8d8;
+          }
+          nav{
+                    display: flex;
+                    justify-content:flex-end;
+                    padding: 10px;
+                    margin-right: 100px;
+                    gap: 10px;
+          }
+
+          
+
+          nav a {
+                    color: black;
+                    text-decoration: none;
+          }
+          nav :hover {
+                    color: #ce0909;
+          }
+
+
+
+          .foto{
+                background-color: aliceblue;
+                    padding: 50px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 80px;
+                    align-content: center;
+                    align-items: center;
+                    width: 90%;
+                    
+          }
+          .foto img{
+                    margin-left: 50px;
+                    width: 200px;
+                    height: 200px;
+                    border: 5;
+                    border-color: white;
+                    border-radius: 50%;
+
+          }
+          .upper-bracket {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+          
+            margin-bottom: 30px;
+          }
+          
+     
+          
+          .hide {
+            display: none;
+            opacity: 0;
+          }
+
+          .profil{
+                    display: flex;
+                    flex-direction: column;
+                    
+          }
+          .profil #pp{
+                    color:rgb(90, 90, 90) ;
+                    font-size: 18px;
+          }
+          .kontak{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    margin-left: 10px;
+          }
+          button{
+                    background-color: blue;
+                    text-decoration: none;
+                    color: white;
+                    gap: 10px;
+                    width: 100px;
+                    padding: 10px;
+          }
+      
+
+          
+          .experience{
+                    margin-left: 25%;
+                    margin-top: 20px;
+                    font-size: 18px;    
+          }
+          .lower-bracket {
+                    padding: 50px;
+                    margin-left: 20px;
+                    font-size: 20px;
+          }
+          .lower-bracket input{
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box; 
+          }
+          .lower-bracket #submit{
+                    width: 100%;
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 14px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+          }
+
+          }
+
+/* android */
+@media(max-width:400px) {
+     
+          nav{
+                    display: none;
+          }
+          .foto{
+                    display: none;
+                    
+          }
+          .profil{
+                    display: none;
+          
+          }
+          .upper-bracket {
+            display:none;
+          
+          }
+          .lower-bracket{
+            display: none;
+          }
+          .kontak #button1,#button2{
+                    display: none;
+          }
+          .nav2 {
+          font-size: 2px;
+            display: flex;
+            justify-content:flex-end;
+            padding: 10px;
+       
+          }
+          .nav2 button,li {
+                    color: rgb(255, 255, 255);
+                   align-items: center;
+                   align-content: center;
+                  background-color: #fbac01;
+                    text-decoration: none;
+                    border-style: 10px;
+          }
+          .nav2 :hover {
+                    color: #1b1b1b;
+          }
+       
+     
+          .experience,.form{
+                    display: none; 
+          }
+          .hide2{
+            display: none;
+            opacity: 0;
+          }
+          .foto2{
+                    padding: 10px;
+                    margin-top: 30px;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+          }
+          .foto2 img{
+                    
+                    width: 120px;
+                    height: 120px;
+                    border: 5;
+                    border-color: white;
+                    border-radius: 50%;
+          
+          }
+          
+          .profil2 h2{
+                 
+                  text-align: center;
+                  
+          }
+          .profil2 #pp{
+                    color:rgb(90, 90, 90) ;
+                    text-align: center;
+                    
+                    font-size: 12px;
+          }
+          .button{
+            text-align: center;
+    
+          }
+          .experience2{
+              margin-left: 20%;
+              margin-top: 20px;
+              font-size: 14px;    
+              gap: 10px;
+          }
+          .form2 {
+                    padding: 10px;
+                  
+                    font-size: 12px;
+          }
+          .form2 input{
+                    width:100% ;
+                    padding: 12px 20px;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box; 
+          }
+          .form2 #submit{
+                    width: 100%;
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 14px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+          }
+                  
+              
+
+    }     
