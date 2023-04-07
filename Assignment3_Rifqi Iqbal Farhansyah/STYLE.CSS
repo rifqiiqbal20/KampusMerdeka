@@ -33,6 +33,9 @@ input[type="submit"]{
   color: #fff;
   background: #ffc107;
 }
+input[type="submit"]:hover{
+  background-color: #6d520b;
+}
 input[type="button"]{
   border-radius: 20px;
   width: 50px;
@@ -40,6 +43,9 @@ input[type="button"]{
   left: -10px;
   background: #eb0202;
   color: #fff;
+}
+input[type="button"]:hover{
+  background-color: #6d0e0b;
 }
 .container.center {
   margin-top: 100px;
@@ -79,9 +85,11 @@ input[type="button"]{
 .col > div {
   height: 150px;
   background-color: #991a00bd;
+  border-radius: 10px;
 }
 .col > div:hover {
   transform: translate(-5%, -5%);
+  transition: 0 20px;
   height: 150px;
   background-color: #dea514bd;
 }
