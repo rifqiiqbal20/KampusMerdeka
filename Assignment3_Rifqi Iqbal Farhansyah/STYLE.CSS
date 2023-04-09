@@ -7,6 +7,10 @@ body {
 h6{
   color: #898989;
 }
+h3:hover{
+  transform: translate(0px,-12px);
+  transition: 0.9s;
+}
 
 input{
   position: relative;
@@ -24,11 +28,16 @@ label{
   border-radius:  25px 0 0 25px;
 
 }
+label :hover{
+  color: #000000;
+
+}
 input[type="submit"]{
   left: -8px;
   border-radius:  0 25px 25px 0;
   width: 80px;
   height: 40px;
+  top: 1px;
   cursor: pointer;
   color: #fff;
   background: #ffc107;
@@ -36,26 +45,28 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background-color: #6d520b;
 }
-input[type="button"]{
-  border-radius: 20px;
+
+.delete{
+  height: 50px;
   width: 50px;
-  height: 40px;
-  left: -10px;
-  background: #eb0202;
-  color: #fff;
+  cursor: pointer;
+  margin-left: -5px;
 }
-input[type="button"]:hover{
-  background-color: #6d0e0b;
+.delete:hover{
+  transform: rotate(90deg) translate(-2px,-0px);
+  transition: 0.5s;
 }
+
 .container.center {
   margin-top: 100px;
 }
 .center {
   text-align: center;
-  border: 5px solid #ff0000d9;
+  border: 1px solid #000000d9;
   border-radius: 20px;
   padding: 10px;
   height: 50%;
+  box-shadow: 10px 3px 10px 2px rgb(91, 0, 0), -10px 0 4px rgb(255, 11, 11);
 }
 
 .container {
@@ -89,7 +100,7 @@ input[type="button"]:hover{
 }
 .col > div:hover {
   transform: translate(-5%, -5%);
-  transition: 0 20px;
+  transition: 0.5s;
   height: 150px;
   background-color: #dea514bd;
 }

@@ -94,3 +94,14 @@ function clearRenderedData() {
                     totaltest.removeChild(totaltest.children[0])
           }
 }
+let leter = 0;
+const text = "COVID-19 TRACKER"
+function typetext(){
+          if (leter < text.length) {
+                    document.getElementById('typing').innerHTML += text.charAt(leter);
+                    leter++;
+                    let speed = Math.floor(Math.random() * 300) + 300;
+                    setTimeout(typetext, speed);
+          }
+}
+typetext()
