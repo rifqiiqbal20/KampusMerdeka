@@ -6,15 +6,11 @@ const newcases = document.getElementById('newcases')
 const totalcases = document.getElementById('totalcases')
 const death = document.getElementById('death')
 const totaltest = document.getElementById('totaltest')
-main()
-
-// function driver
-function main() {
-          renderButton()
-}
 
 
-function renderButton() {
+
+
+function Buttonku() {
     
           myButton.addEventListener('click', (event) => {
                     event.preventDefault()
@@ -26,7 +22,7 @@ function renderButton() {
           })
 
 }
-
+Buttonku()
 function fetchCovidData() {
           const options = {
                     method: 'GET',
